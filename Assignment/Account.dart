@@ -27,6 +27,8 @@ class Account {
     dynamic depositAmt = int.parse(stdin.readLineSync()!);
     if (depositAmt < maxBalance) {
       accBalance = depositAmt + balanceAfterWithdraw;
+    } else {
+      print("Deposit Amt greater than the max Capacity for your account");
     }
   }
 
